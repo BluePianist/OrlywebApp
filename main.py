@@ -9,7 +9,7 @@ equipes = []
 
 @app.route('/', methods = ['GET'])
 def home():
-    return render_template("tables.html",data=joueurs)
+    return render_template("index.html",data=joueurs)
 
 
 @app.route('/data', methods = ['POST', 'GET'])
