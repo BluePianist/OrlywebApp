@@ -31,10 +31,10 @@ flex-direction: column;
 .tableau{
     max-width: 40%;
     /* margin: auto; */
-    /* border: 1px solid #73AD21; */
+    border: 1px solid #73AD21;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: flex-start;
 }
 
 .list_box{
@@ -46,18 +46,20 @@ flex-direction: column;
 }
 
 .presence{
-    max-width: 100%;
+    max-width: 20%;
     /* background-color: #cb2525; */
     text-align: center;
-    padding: 5%;
+    padding: 4%;
+    margin-top: -2px;
     font-weight: bold;
+    margin-left: -60%;
     /* border: 1px solid #234; */
 
 }
 
 .checkbox_box{
     max-width: 100%;
-    margin-top: 10px;
+    margin-top: 9px;
     display: flex;
     flex-flow: row wrap;
     text-align: center;
@@ -69,11 +71,14 @@ flex-direction: column;
 .table__checkbox{
     /* box-sizing: border-box; */
     /* padding:1px; */
-    margin: 14px 20%;
+    margin: 14px 30%;
     /* flex-basis: 25%; */
     /* flex:1; */
 }
 
+.form:nth-child(even){
+    background-color: #e5e5e5;
+}
 .table__row:nth-child(even){
     background-color: #e5e5e5;
 }
