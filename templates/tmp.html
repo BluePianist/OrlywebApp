@@ -1,23 +1,23 @@
 <div class="list_box">
     <table class="table">
         <tr class= "table__header">
-            <th class="table__cell"> Joueur <th/>
-            <th class="table__cell"> Note <th/>
-        <tr/>
+            <th class="table__cell"> Joueur </th>
+            <th class="table__cell"> Note </th>
+        </tr>
         {%for item in data%}
         <tr class='table__row'>
-            <td class="table__cell">{{item.name}}<td/>
-            <td class="table__cell">{{item.note}}<td/>
-        <tr/>
+            <td class="table__cell">{{item.name}}</td>
+            <td class="table__cell">{{item.note}}</td>
+        </tr>
         {% endfor %}
-    <table/>
-<div/>
+    </table>
+</div>
 <div class="checkbox_box">
     <form action="/data" method="POST">
         <input class="table__cell" type="checkbox" name="estpresent" value= "present">
         <input class="table__cell" type="checkbox" name="estpresent" value= "present">
         <input class="table__cell" type="checkbox" name="estpresent" value= "present">
         <input class="table__cell" type="checkbox" name="estpresent" value= "present">
-    <form/>
+    </form>
     <input type="submit" value="Submit" />
-<div/>
+</div>
